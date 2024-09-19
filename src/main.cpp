@@ -110,15 +110,9 @@ void loop() {
 
   // Apply scaling based on calibration offsets
   
-<<<<<<< HEAD
-  int joy1_x_value = scaleValue(raw_joy1_x_value, JOY1_X_OFFSET, 3300, 900);
-  int joy1_y_value = scaleValue(raw_joy1_y_value, JOY1_Y_OFFSET, 560, 2960);
-  int joy2_x_value = scaleValue(raw_joy2_x_value, JOY2_X_OFFSET, 450, 2980);
-=======
   int joy1_x_value = scaleValue(raw_joy1_x_value, JOY1_X_OFFSET, 3200, 900);
   int joy1_y_value = scaleValue(raw_joy1_y_value, JOY1_Y_OFFSET, 2850, 650);
   int joy2_x_value = scaleValue(raw_joy2_x_value, JOY2_X_OFFSET, 460, 3100);
->>>>>>> a88ec480183a7ada57e8c31a5194e8faa745728a
   int joy2_y_value = scaleValue(raw_joy2_y_value, JOY2_Y_OFFSET, 2750, 500);
 
 
@@ -152,5 +146,5 @@ void loop() {
   Serial.print("M" + String(joy1_x_value) + "," + String(joy1_y_value) + "\n"); // Movement values
   Serial.print("C" + String(joy2_x_value) + "," + String(joy2_y_value) + "\n"); // Claw values
 
-  delay(10);
+  delay(1);
 }
